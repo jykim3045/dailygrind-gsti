@@ -224,7 +224,6 @@ const load = () => {
   start_btn.addEventListener('click', () => {
     try {
       msg.innerHTML = '';
-      start_btn.disabled = true;
       begin();
     } catch (err) {
       msg.innerHTML = err;
