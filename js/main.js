@@ -222,12 +222,8 @@ const load = () => {
   const start_btn = document.querySelector('.start');
 
   start_btn.addEventListener('click', () => {
-    try {
-      msg.innerHTML = '';
-      begin();
-    } catch (err) {
-      msg.innerHTML = err;
-    }
+    start_btn.disabled = true;
+    begin();
   });
 
 }
