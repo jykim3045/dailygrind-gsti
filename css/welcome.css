@@ -216,10 +216,6 @@ hr {
     font-size: 32px;
     font-size: 2rem;
   }
-  .check-name {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-  }
 }
 
 @media all and (min-width: 1440px) {
