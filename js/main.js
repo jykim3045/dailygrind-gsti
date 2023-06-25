@@ -1,7 +1,6 @@
 const header = document.getElementById('header');
 const footer = document.getElementById('footer');
 const qna = document.getElementById('qna');
-const u_name = document.querySelector('input[type=text]');
 const wrap = document.getElementById('wrap');
 const tabletMQL = window.matchMedia("all and (min-width: 768px)");
 const pcMQL = window.matchMedia("all and (min-width: 1024px)");
@@ -90,7 +89,6 @@ const goResult = () => {
   const animal = document.querySelector('.result');
   const desc = document.querySelector('.res');
 
-  pTitle.innerHTML = u_name.value + ' 님의 점수는...';
   res_point.innerHTML = point + '점';
   pin.style.marginLeft = infoList[grade].mLeft;
   res_img.src = img_url;
@@ -221,25 +219,10 @@ const begin = () => {
 }
 
 const load = () => {
-  const msg = document.querySelector('.check-name');
   const start_btn = document.querySelector('.start');
-
-  u_name.addEventListener('blur', () => {
-    try {
-      if (u_name.value.length < 1) {
-        throw '이름을 입력하고 시작해 주세요.';
-      }
-      msg.innerHTML = '';
-    } catch (err) {
-      msg.innerHTML = err;
-    }
-  });
 
   start_btn.addEventListener('click', () => {
     try {
-      if (u_name.value.length < 1) {
-        throw '이름을 입력하고 시작해 주세요.';
-      }
       msg.innerHTML = '';
       start_btn.disabled = true;
       begin();
