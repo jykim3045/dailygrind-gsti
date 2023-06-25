@@ -5,9 +5,9 @@ Gooksan Skate part Type Indicator
 
 ---
 ## Credits
-데일리그라인드 BEST OF 2022 [dailygrind](https://dailygrind.kr/news_view.php?s=11256&cate=news)
-Dain Kim's repo [github](https://github.com/dev-dain/10-things-test)
-김다인님께 압도적 감사..! 🙇‍♂️🙇‍♂️
+- 데일리그라인드 BEST OF 2022 : [dailygrind](https://dailygrind.kr/news_view.php?s=11256&cate=news)
+- Dain Kim's repo : [github](https://github.com/dev-dain/10-things-test)
+- 김다인님께 압도적 감사..! 🙇‍♂️🙇‍♂️
 
 ---
 ## 라이센스
