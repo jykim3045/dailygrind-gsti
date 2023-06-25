@@ -1,8 +1,21 @@
 
-# 10-things-test
-"나를 알아보는 10가지 질문" 심리테스트 웹앱
+# GSTI
+Gooksan Skate part Type Indicator
+국산 스케이트 파트 mbti
 
 ---
+## Credits
+데일리그라인드 BEST OF 2022 [dailygrind](https://dailygrind.kr/news_view.php?s=11256&cate=news)
+Dain Kim's repo [github](https://github.com/dev-dain/10-things-test)
+김다인님께 압도적 감사..! 🙇‍♂️🙇‍♂️
+
+---
+## 라이센스
+- 이 코드는 MIT 라이선스를 준수하여 사용 가능합니다.  
+
+
+
+
 ## 설명
 - HTML5 + CSS3 + Vanilla JS로 만든 이미지 테스트 반응형 웹페이지입니다.  
 - [개발일지 보기](https://dev-dain.tistory.com/22?category=816329)   

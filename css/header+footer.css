@@ -62,18 +62,11 @@
   width: 30px;
   height: 30px;
 }
-.github {
+.dailygrind {
   float: right;
-  background-image: url("../img/github-logo.png");
+  background-image: url("../img/dailygrind.jpg");
 }
-.tistory {
-  float: right;
-  background-image: url("../img/tistory-logo.svg");
-  /*
-      로고 출처 : https://marshall-ku.tistory.com/134
-      감사합니다!!
-  */
-}
+
 
 @media all and (min-width: 768px) {
   /* qna에서 margin-top을 없애야 함 */
