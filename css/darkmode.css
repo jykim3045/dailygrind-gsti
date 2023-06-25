@@ -45,14 +45,6 @@ body {
 hr {
   border: 1.5px dashed #ddd;
 }
-#name-input > input {
-  border: 1.5px solid #fff;
-  background-color: #111;
-  color: #fff;
-}
-.warning {
-  color: rgb(231, 20, 20, 1.0);
-}
 .highlight {
   color: rgb(0, 205, 245);
   font-weight: bolder;
