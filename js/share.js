@@ -19,7 +19,7 @@ const tw = () => {
     case 'Push Off Skateshop "The Local"':
       url += 'https://www.youtube.com/watch?v=T9ipvdTXW6M&ab_channel=PUSHOFFSKATESHOP';
     case '최종원 "Or"':
-      url += 'https://www.youtube.com/watch?v=nq1Yty3qYpw&ab_channel=kimdonghe'
+      url += 'https://www.youtube.com/watch?v=nq1Yty3qYpw&ab_channel=kimdonghe';
     default:
       url += 'https://www.youtube.com/watch?v=wUbt-pl-2uc&ab_channel=LabrosSeoul';
   }
