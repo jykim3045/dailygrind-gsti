@@ -82,13 +82,13 @@ const goResult = () => {
   const animal = document.querySelector('.result');
   const desc = document.querySelector('.res');
 
-  res_img.url = infoList[grade].url;
   res_img.src = img_url;
   res_img.alt = infoList[grade].name;
   res_img.title = infoList[grade].name;
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList[grade].name;
   desc.innerHTML = infoList[grade].desc;
+
 
   setTimeout(() => {
     header.style.display = 'block';
