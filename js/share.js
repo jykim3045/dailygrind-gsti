@@ -10,17 +10,21 @@ const fb = () => {
 }
 const tw = () => {
   let name = document.querySelector('.result').innerHTML;
+  let url = '';
   switch (name) {
-    case '표범':
-    case '유니콘':
-      name += '이에요! ';
-      break;
+    case 'LABROS "TAKE ONE"':
+      url += 'https://www.youtube.com/watch?v=wUbt-pl-2uc&ab_channel=LabrosSeoul';
+    case '고아림과 친구들의 "DUOL LOUD"':
+      url += 'https://www.youtube.com/watch?v=nhCGMvKLvEs&ab_channel=GoarimGo';
+    case 'Push Off Skateshop "The Local"':
+      url += 'https://www.youtube.com/watch?v=T9ipvdTXW6M&ab_channel=PUSHOFFSKATESHOP';
+    case '최종원 "Or"':
+      url += 'https://www.youtube.com/watch?v=nq1Yty3qYpw&ab_channel=kimdonghe'
     default:
-      name += '예요! ';
+      url += 'https://www.youtube.com/watch?v=wUbt-pl-2uc&ab_channel=LabrosSeoul';
   }
-  window.open('https://twitter.com/intent/tweet?text='
-    + title + '%0A' + '저는 ' + name + '' + hash + '%0A' + url,
-    'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  window.open(url,
+    'youtubevideo', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
   return false;
 }
 const nv = () => {
