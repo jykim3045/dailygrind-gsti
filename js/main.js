@@ -4,7 +4,7 @@ const qna = document.getElementById('qna');
 const wrap = document.getElementById('wrap');
 const tabletMQL = window.matchMedia("all and (min-width: 768px)");
 const pcMQL = window.matchMedia("all and (min-width: 1024px)");
-const ENDPOINT = 5;
+const ENDPOINT = 10;
 const select = [];
 let qIdx = -1;
 
@@ -76,13 +76,14 @@ const goResult = () => {
   const result = document.getElementById('result');
   const point = calcScore();
   const grade = sortResult(point);
+  const pTitle = document.querySelector('.p');
   const img_url = 'img/image-' + grade + '.png';
   const res_img = document.createElement('img');
   const res_img_div = document.querySelector('.art');
   const animal = document.querySelector('.result');
   const desc = document.querySelector('.res');
 
-  res_img.url = infoList[grade].url;
+  pTitle.innerHTML = infoList[grade].mLeft;
   res_img.src = img_url;
   res_img.alt = infoList[grade].name;
   res_img.title = infoList[grade].name;
