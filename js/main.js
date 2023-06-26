@@ -4,7 +4,7 @@ const qna = document.getElementById('qna');
 const wrap = document.getElementById('wrap');
 const tabletMQL = window.matchMedia("all and (min-width: 768px)");
 const pcMQL = window.matchMedia("all and (min-width: 1024px)");
-const ENDPOINT = 10;
+const ENDPOINT = 5;
 const select = [];
 let qIdx = -1;
 
@@ -82,6 +82,7 @@ const goResult = () => {
   const animal = document.querySelector('.result');
   const desc = document.querySelector('.res');
 
+  res_img.url = infoList[grade].url;
   res_img.src = img_url;
   res_img.alt = infoList[grade].name;
   res_img.title = infoList[grade].name;
