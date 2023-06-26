@@ -2,11 +2,11 @@ const qnaList = [
   {
     q: '스케이트보드 파트의 시작과 끝은 역시',
     a: [
-      { answer: '강렬한 시작', score: 2 },
-      { answer: '스토리텔링이 있는 시작', score: 4 },
-      { answer: '파워풀한 트릭으로 앤딩', score: 6 },
-      { answer: '위트 넘치는 앤딩이지', score: 6 },
-      { answer: '여운을 남기는 앤딩', score: 6 }
+      { answer: '강렬한 시작', score: 1 },
+      { answer: '스토리텔링이 있는 시작', score: 2 },
+      { answer: '파워풀한 트릭으로 앤딩', score: 3 },
+      { answer: '위트 넘치는 앤딩이지', score: 4 },
+      { answer: '여운을 남기는 앤딩', score: 5 }
     ]
   },
   {
