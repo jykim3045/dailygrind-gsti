@@ -96,28 +96,28 @@ const infoList = [
     from: 10,
     to: 15,
     mLeft: 'https://www.youtube.com/watch?v=wUbt-pl-2uc&ab_channel=LabrosSeoul',
-    name: 'LABROS "TAKE ONE"',
+    name: 'LABROS <TAKE ONE>',
     desc: '데일리그라인드 한줄평 : 10대 소년들이 보여주는 새로운 물결과 그 중심에 서 있는 라브로스의 행보.'
   },
   {
     from: 16,
     to: 23,
     mLeft: 'https://www.youtube.com/watch?v=nhCGMvKLvEs&ab_channel=GoarimGo',
-    name: '고아림과 친구들의 "DUOL LOUD"',
+    name: '고아림과 친구들의 <DUOL LOUD>',
     desc: '데일리그라인드 한줄평 : 정형화된 스케이트 영상을 벗어나 다양한 시도를 보여주는 고아림의 작품. 신유진의 1인 2역 연기가 일품이다.'
   },
   {
     from: 24,
     to: 31,
     mLeft: 'https://www.youtube.com/watch?v=T9ipvdTXW6M&ab_channel=PUSHOFFSKATESHOP',
-    name: 'Push Off Skateshop "The Local"',
+    name: 'Push Off Skateshop <The Local>',
     desc: '데일리그라인드 한줄평 : 푸쉬오프의 복귀작. 도심과 자연이 어우러진 제주의 스케이팅을 맛볼 수 있다.'
   },
   {
     from: 31,
     to: 90,
     mLeft: 'https://www.youtube.com/watch?v=nq1Yty3qYpw&ab_channel=kimdonghe',
-    name: '최종원 "Or"',
+    name: '최종원 <Or>',
     desc: '데일리그라인드 한줄평 : 찰진 팝, 고난도 트릭을 쉬워 보이게끔 하는 최종원의 모습은 미래를 더욱 기대하게 한다.'
   }
 ]
