@@ -4,7 +4,7 @@ const qna = document.getElementById('qna');
 const wrap = document.getElementById('wrap');
 const tabletMQL = window.matchMedia("all and (min-width: 768px)");
 const pcMQL = window.matchMedia("all and (min-width: 1024px)");
-const ENDPOINT = 10;
+const ENDPOINT = 9;
 const select = [];
 let qIdx = -1;
 
@@ -42,6 +42,7 @@ const copy = () => {
   document.body.removeChild(tmp);
 }
 
+/*
 const calcScore = () => {
   let point = 0;
   for (let i = 0; i < ENDPOINT; i++) {
@@ -49,19 +50,87 @@ const calcScore = () => {
   }
   return point;
 }
+*/
+
+const calcScore = () => {
+  let point = [];
+  for (let i = 0; i < ENDPOINT; i++) {
+    point[i] = qnaList[i].a[select[i]].score;
+  }
+  return point;
+}
+
+const calcLastScore = () => {
+  let point = 0;
+  point += qnaList[9].a[select[9]].score;
+  return point;
+}
 
 const sortResult = (point) => {
-  let num = 0;
-  if (point <= 20) {
-    num = 0;
-  } else if (point <= 30) {
-    num = 1;
-  } else if (point <= 40) {
-    num = 2;
+  const v1 = [1,1,4,1,1,1,2,1,3];
+  const v2 = [3,3,3,2,2,3,3,2,1];
+  const v3 = [2,1,5,1,1,5,2,2,4];
+  const v4 = [3,2,4,1,1,5,1,2,2];
+  const v5 = [1,1,1,1,1,1,1,1,2];
+  const v6 = [2,2,4,1,2,2,3,2,2];
+  const v7 = [2,1,2,2,2,5,3,2,1];
+  const v8 = [3,2,3,1,2,5,3,1,4];
+  const v9 = [1,2,4,1,1,1,2,2,3];
+  const v10 = [3,2,6,1,2,5,2,1,2];
+  const v11 = [3,2,1,1,1,4,2,1,3];
+  const v12 = [1,3,3,1,1,1,1,2,1];
+  const vids = [v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12];
+  const lastP = calcLastScore();
+
+  let matches = 0;
+  let match_vid = 0;
+
+  let num1 = 15;
+  let num2 = 15;
+  let num3 = 15;
+  if (lastP == 1) {
+    num1 = 0;
+    num2 = 1;
+  } else if (lastP == 2) {
+    num1 = 2;
+  } else if (lastP == 3) {
+    num1 = 3;
+    num2 = 4;
+  } else if (lastP == 4) {
+    num1 = 5;
   } else {
-    num = 3;
+    num1 = 6;
+    num2 = 7;
+    num3 = 8;
   }
-  return num;
+
+  for (let i = 0; i < vids.length; i++){
+    const indexes = [];
+    const vid = vids[i];
+    for (let j = 0; j < vid.length; j++) {
+      if (vid[j] == point[j]) {
+        indexes.push(j);
+      }
+    }
+
+    if (indexes.includes(num1)) {
+      indexes.push(num1);
+      indexes.push(num1);
+    } else if (indexes.includes(num2)) {
+      indexes.push(num2);
+      indexes.push(num2);
+    } else if (indexes.includes(num3)) {
+      indexes.push(num3);
+      indexes.push(num3);
+    }
+
+    if (indexes.length > matches) {
+      matches = indexes.length;
+      match_vid = i;
+    }
+  }
+
+  return match_vid;
 }
 
 const goResult = () => {

@@ -20,6 +20,22 @@ const tw = () => {
       url += 'https://www.youtube.com/watch?v=T9ipvdTXW6M&ab_channel=PUSHOFFSKATESHOP';
     case '최종원 "Or"':
       url += 'https://www.youtube.com/watch?v=nq1Yty3qYpw&ab_channel=kimdonghe';
+    case 'DAILY GRIND MONTAGE 009':
+      url += 'https://www.youtube.com/watch?v=4lYAAprJOk8';
+    case '정재현의 "SURF!"':
+      url += 'https://www.youtube.com/watch?v=1EFwHvODb2M';
+    case 'Close the Door “Lockpick”':
+      url += 'https://www.youtube.com/watch?v=spxd2YjYnoA';
+    case 'Timber Shop “Monologue”':
+      url += 'https://www.youtube.com/watch?v=svQ_FXyHx0Y';
+    case 'Vans “Cabs Lock”':
+      url += 'https://www.youtube.com/watch?v=d7kqNZFnFGc';
+    case 'Riot Skateshop “Rioters”':
+      url += 'https://www.youtube.com/watch?v=45s4-eVjcDk';
+    case 'LMC “Suffer from guilty forever”':
+      url += 'https://www.youtube.com/watch?v=ocYTFh5zEjc';
+    case '최호진 “Rush Hour”':
+      url += 'https://www.youtube.com/watch?v=RwDc61WI2RA';
     default:
       url += 'https://www.youtube.com/watch?v=wUbt-pl-2uc&ab_channel=LabrosSeoul';
   }
