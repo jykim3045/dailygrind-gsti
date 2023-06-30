@@ -36,7 +36,7 @@ const goShare = () => goTo('share');
 const copy = () => {
   const tmp = document.createElement('textarea');
   document.body.appendChild(tmp);
-  tmp.value = url;
+  tmp.value = "https://dailygrind-gsti.netlify.app/";
   tmp.select();
   document.execCommand('copy');
   document.body.removeChild(tmp);
