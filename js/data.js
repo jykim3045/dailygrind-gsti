@@ -2,7 +2,7 @@ const qnaList = [
   {
     q: '[시작과 끝] 스케이트보드 파트의 시작은 역시',
     a: [
-      { answer: '시선을 사로잡는 강렬한 시작!', score: 1 },
+      { answer: '시선을 사로잡는 강렬한 시작', score: 1 },
       { answer: '몰입감을 높여주는 잔잔한 시작', score: 2 },
       { answer: '색다른 것도 좋다. 독창적인 시작', score: 3 }
     ]
@@ -31,7 +31,7 @@ const qnaList = [
     a: [
       { answer: '다운, 갭, 렛지, 플랫 - 뭐든 최적인 공원/광장', score: 1 },
       { answer: '눈에 보이는 모든 게 기물. 길거리 스트릿', score: 2 },
-      { answer: '오히려 희소가치! 파크/보울', score: 3 }
+      { answer: '오히려 희소가치. 파크/보울', score: 3 }
     ]
   },
   {
@@ -55,8 +55,8 @@ const qnaList = [
     q: '[영상] 선호하는 파트 길이는',
     a: [
       { answer: '숏폼이 대세! 짧고 굵게', score: 1 },
-      { answer: '적당한 길이! 너무 짧으면 아쉽고 너무 길면 루즈해져', score: 2 },
-      { answer: '좋은 건 많을수록 더 좋은 법! 장장익선', score: 3 }
+      { answer: '적당한 길이. 너무 짧으면 아쉽고 너무 길면 루즈해져', score: 2 },
+      { answer: '좋은 건 많을수록 더 좋은 법. 장장익선', score: 3 }
     ]
   },
   {
@@ -71,7 +71,7 @@ const qnaList = [
     a: [
       { answer: '예술성을 보여주는 세련된 편집', score: 1 },
       { answer: '눈이 즐거운 컷신과 풍경 등', score: 2 },
-      { answer: '위험함과 과감함이! skate or die', score: 3 },
+      { answer: '위험함과 과감함이! Skate or die', score: 3 },
       { answer: '행인들의 리액션. 싸움이든 응원이든', score: 4 }
     ]
   },
