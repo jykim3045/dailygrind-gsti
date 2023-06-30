@@ -2,21 +2,21 @@ const qnaList = [
   {
     q: '[시작과 끝] 스케이트보드 파트의 시작은 역시',
     a: [
-      { answer: '강렬한 시작', score: 1 },
-      { answer: '잔잔한 시작', score: 2 },
-      { answer: '몰입감 넘치는 독창적인 시작', score: 3 }
+      { answer: '시선을 사로잡는 강렬한 시작!', score: 1 },
+      { answer: '몰입감을 높여주는 잔잔한 시작', score: 2 },
+      { answer: '색다른 것도 좋다. 독창적인 시작', score: 3 }
     ]
   },
   {
     q: '[시작과 끝] 스케이트보드 파트의 끝은 역시',
     a: [
       { answer: '시원한 트릭으로 깔끔하게', score: 1 },
-      { answer: '위트있는 크래딧과 함께', score: 2 },
-      { answer: '여운이 남는', score: 3 }
+      { answer: '재치 있는 비하인드 씬과 크래딧', score: 2 },
+      { answer: '깊은 여운이 남는 엔딩', score: 3 }
     ]
   },
   {
-    q: '[음악] 파트에서 귀에 처음 꽂히는 음악은',
+    q: '[음악] 귀에 처음 꽂히는 음악은',
     a: [
       { answer: '전자음악', score: 1 },
       { answer: '재즈', score: 2 },
@@ -27,28 +27,28 @@ const qnaList = [
     ]
   },
   {
-    q: '[스팟] 스팟 종류는',
+    q: '[스팟] 이런 스팟에서 타는 걸 보고 싶다',
     a: [
-      { answer: '공원', score: 1 },
-      { answer: '길거리 스트릿', score: 2 },
-      { answer: '파크/보울', score: 3 }
+      { answer: '다운, 갭, 렛지, 플랫 - 뭐든 최적인 공원/광장', score: 1 },
+      { answer: '눈에 보이는 모든 게 기물. 길거리 스트릿', score: 2 },
+      { answer: '오히려 희소가치! 파크/보울', score: 3 }
     ]
   },
   {
-    q: '[스팟] 스팟은',
+    q: '[스팟] 눈에 익은 스팟? 본적 없는 스팟?',
     a: [
       { answer: '여기서 저걸 탄다고? 트릭의 난이도를 느낄 수 있는 익숙한 스팟', score: 1 },
-      { answer: '오 여긴 어디지? 새롭고 독특한 스팟', score: 2 }
+      { answer: '여긴 어디지? 무궁무진한 가능성, 새롭고 독특한 스팟', score: 2 }
     ]
   },
   {
-    q: '[트릭] 선호하는 트릭 종류는',
+    q: '[트릭] 파트에서 선호하는 트릭 종류는',
     a: [
-      { answer: '계단 다운', score: 1 },
-      { answer: '힐밤', score: 2 },
-      { answer: '창의성', score: 3 },
-      { answer: '롱테이크로 찍은 끝없는 라인', score: 4 },
-      { answer: '렛지', score: 5 }
+      { answer: '어마무시한 계단 다운', score: 1 },
+      { answer: '미친 속도감 힐밤', score: 2 },
+      { answer: '슬래피, 본레스, 월라이드 - 뭐든 창의적인 거', score: 3 },
+      { answer: '롱테이크와 끝없는 라인', score: 4 },
+      { answer: '그라인드와 슬라이드! 렛지 트릭', score: 5 }
     ]
   },
   {
@@ -56,33 +56,33 @@ const qnaList = [
     a: [
       { answer: '숏폼이 대세! 짧고 굵게', score: 1 },
       { answer: '적당한 길이! 너무 짧으면 아쉽고 너무 길면 루즈해져', score: 2 },
-      { answer: '좋은건 많을수록 더 좋은 법! 장장익선', score: 3 }
+      { answer: '좋은 건 많을수록 더 좋은 법! 장장익선', score: 3 }
     ]
   },
   {
     q: '[영상] HD vs VX',
     a: [
-      { answer: '고화질! HD!', score: 1 },
-      { answer: '저화질 감성! VX!', score: 2 }
+      { answer: '역시 대세는 HD', score: 1 },
+      { answer: '저화질조차 감성이다 VX', score: 2 }
     ]
   },
   {
     q: '[영상] 파트 사이사이에는',
     a: [
-      { answer: '세련된 편집', score: 1 },
-      { answer: '사이사이 재밌는 컷신과 풍경 등', score: 2 },
+      { answer: '예술성을 보여주는 세련된 편집', score: 1 },
+      { answer: '눈이 즐거운 컷신과 풍경 등', score: 2 },
       { answer: '위험함과 과감함이! skate or die', score: 3 },
-      { answer: '행인들과의 interaction. 싸움이던 응원이던', score: 4 }
+      { answer: '행인들의 리액션. 싸움이든 응원이든', score: 4 }
     ]
   },
   {
-    q: '섹션중 가장 중요하게 보는건',
+    q: '5가지 섹션 중 포기할 수 없는 건',
     a: [
-      { answer: '시작과 끝', score: 1 },
-      { answer: '음악', score: 2 },
-      { answer: '스팟', score: 3 },
-      { answer: '트릭', score: 4 },
-      { answer: '영상', score: 5 }
+      { answer: '[시작과 끝]', score: 1 },
+      { answer: '[음악]', score: 2 },
+      { answer: '[스팟]', score: 3 },
+      { answer: '[트릭]', score: 4 },
+      { answer: '[영상]', score: 5 }
     ]
   }
 ]
