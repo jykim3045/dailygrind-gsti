@@ -4,7 +4,8 @@ const qna = document.getElementById('qna');
 const wrap = document.getElementById('wrap');
 const tabletMQL = window.matchMedia("all and (min-width: 768px)");
 const pcMQL = window.matchMedia("all and (min-width: 1024px)");
-const ENDPOINT = 9;
+const ENDPOINT = 10;
+const numq = 9;
 const select = [];
 let qIdx = -1;
 
@@ -42,19 +43,9 @@ const copy = () => {
   document.body.removeChild(tmp);
 }
 
-/*
-const calcScore = () => {
-  let point = 0;
-  for (let i = 0; i < ENDPOINT; i++) {
-    point += qnaList[i].a[select[i]].score;
-  }
-  return point;
-}
-*/
-
 const calcScore = () => {
   let point = [];
-  for (let i = 0; i < ENDPOINT; i++) {
+  for (let i = 0; i < numq; i++) {
     point[i] = qnaList[i].a[select[i]].score;
   }
   return point;
