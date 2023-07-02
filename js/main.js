@@ -62,7 +62,7 @@ const sortResult = (point) => {
   const v2 = [3,3,3,2,2,3,3,2,1];
   const v3 = [2,1,5,1,1,5,2,2,4];
   const v4 = [3,2,4,1,1,5,1,2,2];
-  const v5 = [1,1,1,1,1,1,1,1,2];
+  const v5 = [1,1,1,2,1,1,1,1,2];
   const v6 = [2,2,4,1,2,2,3,2,2];
   const v7 = [2,1,2,2,2,5,3,2,1];
   const v8 = [3,2,3,1,2,5,3,1,4];
@@ -76,26 +76,53 @@ const sortResult = (point) => {
   let matches = 0;
   let match_vid = 0;
 
-  let num1 = 15;
-  let num2 = 15;
-  let num3 = 15;
+  let num1 = 2941;
+  let num2 = 2941;
+  let num3 = 2941;
+  let num4 = 2941;
+  let num5 = 2941;
+  let num6 = 2941;
+
   if (lastP == 1) {
     num1 = 0;
     num2 = 1;
+    num3 = 0;
+    num4 = 1;
+    num5 = 0;
+    num6 = 1;
   } else if (lastP == 2) {
     num1 = 2;
+    num2 = 2;
+    num3 = 2;
+    num4 = 2;
+    num5 = 2;
+    num6 = 2;
   } else if (lastP == 3) {
     num1 = 3;
     num2 = 4;
+    num3 = 3;
+    num4 = 4;
+    num5 = 3;
+    num6 = 4;
   } else if (lastP == 4) {
     num1 = 5;
+    num2 = 5;
+    num3 = 5;
+    num4 = 5;
+    num5 = 5;
+    num6 = 5;
   } else {
     num1 = 6;
     num2 = 7;
     num3 = 8;
+    num4 = 6;
+    num5 = 7;
+    num6 = 8;
   }
 
-  for (let i = 0; i < vids.length; i++){
+  const nums = [num1,num2,num3,num4,num5,num6];
+
+  for (let i = 0; i < vids.length; i++) {
     const indexes = [];
     const vid = vids[i];
     for (let j = 0; j < vid.length; j++) {
@@ -104,20 +131,25 @@ const sortResult = (point) => {
       }
     }
 
-    if (indexes.includes(num1)) {
-      indexes.push(num1);
-      indexes.push(num1);
-    } else if (indexes.includes(num2)) {
-      indexes.push(num2);
-      indexes.push(num2);
-    } else if (indexes.includes(num3)) {
-      indexes.push(num3);
-      indexes.push(num3);
+    for (let k = 0; k < nums.length; k++) {
+      if (indexes.includes(nums[k])) {
+        indexes.push(2941);
+      }
     }
 
-    if (indexes.length > matches) {
-      matches = indexes.length;
+    let match_len = indexes.length;
+    if (i == 2) {
+      match_len -= 1;
+    }
+
+    if (match_len > matches) {
+      matches = match_len;
       match_vid = i;
+    } else if (match_len == matches) {
+      if (indexes.includes(2941)) {
+        matches = match_len;
+        match_vid = i;
+      }
     }
   }
 
